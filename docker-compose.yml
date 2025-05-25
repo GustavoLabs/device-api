@@ -1,0 +1,37 @@
+services:
+  mariadb:
+    image: mariadb:10.10
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: device-api
+      MYSQL_USER: user
+      MYSQL_PASSWORD: rootpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+  redis:
+    image: redis:7
+
+    ports:
+      - "6379:6379"
+
+  app:
+    build: .
+    image: device-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mariadb
+      - redis
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mariadb:3306/device-api?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: rootpass
+      SPRING_REDIS_HOST: redis
+      SPRING_REDIS_PORT: 6379
+
+
+volumes:
+  db-data:
