@@ -1,21 +1,21 @@
 
 # 📘 Device Manager API
 
-## 📋 Descrição
+## 📋 Description
 
-Este projeto é uma API REST desenvolvida com **Java 21** e **Spring Boot 3.5**, com foco no gerenciamento de *devices*. Ele utiliza práticas modernas de desenvolvimento como:
+This project is a REST API developed with **Java 21** and **Spring Boot 3.5**, focusing on *device* management. It utilizes modern development practices such as:
 
-- Persistência com **Spring Data JPA**
-- Banco de dados **MariaDB**
-- Cache com **Redis**
-- Migrações com **Flyway**
-- Documentação com **Swagger (OpenAPI)**
-- Observabilidade com **Micrometer + Prometheus**
-- Testes com **JUnit + Jacoco**
+- Persistence with **Spring Data JPA**
+- Database **MariaDB**
+- Caching with **Redis**
+- Migrations with **Flyway**
+- Documentation with **Swagger (OpenAPI)**
+- Observability with **Micrometer + Prometheus**
+- Testing with **JUnit + Jacoco**
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 - Java 21
 - Spring Boot 3.5
@@ -30,59 +30,59 @@ Este projeto é uma API REST desenvolvida com **Java 21** e **Spring Boot 3.5**,
 - Spring Cache
 - Spring Boot Actuator
 - Docker + Docker Compose
-- Jacoco (cobertura de testes)
+- Jacoco (test coverage)
 
 ---
 
-## ⚙️ Pré-requisitos
+## ⚙️ Prerequisites
 
 - [Docker](https://www.docker.com/)
 - [Docker Compose](https://docs.docker.com/compose/)
-- Java 21 (caso deseje rodar localmente fora do Docker)
+- Java 21 (if you wish to run it locally outside of Docker)
 - Maven 3.9+
 
 ---
 
-## 📂 Como Rodar o Projeto
+## 📂 How to Run the Project
 
-### ✅ 1. Usando Docker Compose
+### ✅ 1. Using Docker Compose
 
 ```bash
-git clone <seu-repo>
+git clone <your-repo>
 cd DeviceManager
 docker-compose up --build
 ```
 
-> A aplicação estará disponível em: `http://localhost:8080`  
-> A documentação Swagger: `http://localhost:8080/swagger-ui.html`
+> The application will be available at: `http://localhost:8080`  
+> Swagger documentation:: `http://localhost:8080/swagger-ui.html`
 
 ---
 
-### ✅ 2. Rodando Localmente com MySQL e Redis via Docker
+### ✅ 2.Running Locally with MySQL and Redis via Docker
 
 ```bash
 docker-compose up -d mariadb redis
 
-# Exportar variáveis de ambiente
+# Export environment variables
 export SPRING_DATASOURCE_URL=jdbc:mariadb://localhost:3306/device-api
 export SPRING_DATASOURCE_USERNAME=user
 export SPRING_DATASOURCE_PASSWORD=rootpass
 export SPRING_REDIS_HOST=localhost
 export SPRING_REDIS_PORT=6379
 
-# Rodar com Maven
+# Run with Maven
 ./mvnw spring-boot:run
 ```
 
 ---
 
-## 🔍 Endpoints Principais
+## 🔍 Main Endpoints
 
-Acesse `http://localhost:8080/swagger-ui.html` para visualizar todos os endpoints disponíveis.
+Access `http://localhost:8080/swagger-ui.html` to view all available endpoints.
 
 ---
 
-## 📦 Build da Imagem Docker
+## 📦 Docker Image Build
 
 ```dockerfile
 # Dockerfile
