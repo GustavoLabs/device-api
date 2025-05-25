@@ -48,7 +48,7 @@ This project is a REST API developed with **Java 21** and **Spring Boot 3.5**, f
 ### ✅ 1. Using Docker Compose
 
 ```bash
-git clone <your-repo>
+git clone https://github.com/GustavoLabs/device-api.git
 cd DeviceManager
 docker-compose up --build
 ```
