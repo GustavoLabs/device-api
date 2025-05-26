@@ -1,4 +1,4 @@
-package com.example.devicemanager.domain;
+package com.example.devicemanager.model;
 
 public enum State {
     AVAILABLE,

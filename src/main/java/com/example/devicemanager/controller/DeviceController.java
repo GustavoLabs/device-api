@@ -2,7 +2,7 @@ package com.example.devicemanager.controller;
 
 import com.example.devicemanager.dto.CreateDeviceDTO;
 import com.example.devicemanager.dto.DeviceDTO;
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.State;
 import com.example.devicemanager.service.DeviceService;
 import com.example.devicemanager.service.DeviceMapper;
 import io.swagger.v3.oas.annotations.Operation;

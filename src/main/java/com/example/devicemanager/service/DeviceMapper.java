@@ -1,12 +1,9 @@
 package com.example.devicemanager.service;
 
-import com.example.devicemanager.domain.Device;
+import com.example.devicemanager.model.Device;
 import com.example.devicemanager.dto.CreateDeviceDTO;
 import com.example.devicemanager.dto.DeviceDTO;
 import org.springframework.stereotype.Component;
-
-import java.time.Instant;
-import java.time.format.DateTimeFormatter;
 
 @Component
 public class DeviceMapper {

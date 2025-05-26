@@ -1,11 +1,10 @@
 package com.example.devicemanager.repository;
 
-import com.example.devicemanager.domain.Device;
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.Device;
+import com.example.devicemanager.model.State;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.Instant;

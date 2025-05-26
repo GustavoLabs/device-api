@@ -1,6 +1,6 @@
 package com.example.devicemanager.dto;
 
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.State;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;

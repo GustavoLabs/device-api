@@ -1,7 +1,7 @@
 package com.example.devicemanager.service;
 
-import com.example.devicemanager.domain.Device;
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.Device;
+import com.example.devicemanager.model.State;
 import com.example.devicemanager.dto.CreateDeviceDTO;
 import com.example.devicemanager.dto.DeviceDTO;
 import com.example.devicemanager.exception.BusinessException;
@@ -12,7 +12,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
-import org.springframework.data.domain.*;
 
 import java.time.Instant;
 import java.util.*;

@@ -1,6 +1,6 @@
 package com.example.devicemanager.controller;
 
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.State;
 import com.example.devicemanager.dto.CreateDeviceDTO;
 import com.example.devicemanager.dto.DeviceDTO;
 import com.example.devicemanager.repository.DeviceRepository;
@@ -14,7 +14,6 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.*;
 
 import java.time.Instant;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

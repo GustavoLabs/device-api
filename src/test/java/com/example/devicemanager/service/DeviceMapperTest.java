@@ -1,7 +1,7 @@
 package com.example.devicemanager.service;
 
-import com.example.devicemanager.domain.Device;
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.Device;
+import com.example.devicemanager.model.State;
 import com.example.devicemanager.dto.CreateDeviceDTO;
 import com.example.devicemanager.dto.DeviceDTO;
 import org.junit.jupiter.api.DisplayName;

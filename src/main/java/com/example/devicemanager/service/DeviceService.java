@@ -1,7 +1,7 @@
 package com.example.devicemanager.service;
 
-import com.example.devicemanager.domain.Device;
-import com.example.devicemanager.domain.State;
+import com.example.devicemanager.model.Device;
+import com.example.devicemanager.model.State;
 import com.example.devicemanager.dto.CreateDeviceDTO;
 import com.example.devicemanager.dto.DeviceDTO;
 import com.example.devicemanager.exception.BusinessException;
@@ -26,7 +26,6 @@ import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
